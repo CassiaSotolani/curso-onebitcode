@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Validação de Form</title>
+  </head>
+  <body>
+    <h1>Encontre no Google</h1>
+    <form
+      action="https://www.google.com.br/search"
+      target="_blank"
+      autocomplete="on"
+    >
+      <div>
+        <label for="q">O que deseja pesquisar?</label>
+        <input
+          type="text"
+          id="q"
+          name="q"
+          placeholder="Nasa, SpaceX"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Informe seu e-mail:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="email@email.com"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="number">Informe um número:</label>
+        <input
+          type="number"
+          name="number"
+          placeholder="5"
+          required
+          min="0"
+          max="20"
+        />
+      </div>
+      <br />
+      <input type="submit" value="Pesquisar" />
+    </form>
+  </body>
+</html>
